@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebooks Shop</title>
+     <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <style>
+    body {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  background-color: #b8aeae;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+main {
+  padding: 50px;
+}
+
+.ebook-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.ebook-container h2{
+  margin: 20px;
+  padding: 8px;
+  space-between: 3px;
+}
+/* For screens smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+  .ebook-container {
+    flex-direction: column;  /* Stack ebooks vertically on small screens */
+    justify-content: center; /* Center ebooks horizontally */
+  }
+  
+  .ebook {
+    margin: 20px;
+    text-align: center;
+    
+    width: 300px;  /* Make ebooks full width on small screens */
+   
+  }
+}
+ .ebook:hover{
+   border-top: 2px solid white;
+   margin-top: 5px;
+ }
+
+
+.ebook img {
+  
+  max-width: 100px;
+  height: auto;
+}
+
+
+.ebook h3{
+  margin: 5px 0;
+  font-size: 8px;
+}
+.ebook p {
+  margin: 5px 0;
+  font-size: 10px;
+  
+}
+
+.ebook a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ebook a:hover{
+  background-color: grey;
+  color: white;
+}
+
+.ebook-categories {
+  text-align: center;
+}
+
+.ebook-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ebook-categories li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.ebook-categories a {
+  text-decoration: none;
+  color: white;
+}
+.ebook-categories a:hover {
+  border-bottom: 2px solid white;
+}
+  
+.star-rating {
+  font-size: 10px; /* Adjust star size */
+  display: inline-block;
+}
+
+.star {
+  
+  color: gold;
+}
+.star5{
+  color: grey;
+}
+
+.star.active {
+  color: gold;
+}
+
+.au{
+  color: grey;
+}
+.pr{
+  color:lightgreen;
+}
+  </style>
+</head>
+<body>
+        <nav>
+         <div class="logo">
+            Awakenend
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="ebooks.html">Shop</a></li>
+          
+            <li><a href="login.html">Login</a></li>
+         </ul>
+      </nav>
+  <header>
+    <h1>Awakenend Ebooks Shop</h1>
+  </header>
+  <main>
+    <section class="ebook-container">
+      <h2>Fiction</h2>
+      <div class="ebook">
+        <img src="img/f/1.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Atlas Maneuver</h3>
+        <p class="au">Steve Berry</p>
+        <p class="pr">US$15.00</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img src="img/f/2.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Three-Inch Teeth</h3>
+        <p class="au">C. J. Box</p>
+        <p class="pr">US$17.52</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/f/3.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Women</h3>
+        <p class="au">Kristin Hannah</p>
+        <p class="pr">US$13.29</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/f/4.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Random in Death</h3>
+        <p class="au">J. D. Robb</p>
+        <p class="pr">US$21.00</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img  src="img/f/5.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>A Court of Mist and<br>
+        Fury</h3>    
+        <p class="au">Sarah J. Maas</p>
+        <p class="pr">US$15.20</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/f/6.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>House of Flame and<br>
+        Shadow</h3>  
+        <p class="au">Sarah J. Maas</p>
+        <p class="pr">US$22.40</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/f/7.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>System Collapse</h3>  
+        <p class="au">Martha Wellss</p>
+        <p class="pr">US$15.39</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+
+      
+      <div class="ebook">
+        <img src="img/f/8.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>First Lie Wins</h3>  
+        <p class="au">Ashley Elston</p>
+        <p class="pr">US$17.52</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/f/9.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Hunter</h3>  
+        <p class="au">Tana French</p>
+        <p class="pr">US$16.35</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+      <div class="ebook">
+        <img src="img/f/10.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Heaven &<br>
+        Earth Grocery Store</h3>  
+        <p class="au">James McBride</p>
+        <p class="pr">US$17.52</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+            <div class="ebook">
+        <img src="img/f/11.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The 24th Hour</h3>  
+        <p class="au">James Patterson,<br>
+        Maxine Paetro</p>
+        <p class="pr">US$15.00</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/f/12.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Camino Ghosts</h3>  
+        <p class="au">John Grisham</p>
+        <p class="pr">US$17.52</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+      <div class="ebook">
+        <img src="img/f/13.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Mind Games</h3>  
+        <p class="au">Nora Roberts</p>
+        <p class="pr">US$21.00</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+    
+      
+      
+    </section>
+    
+
+
+    
+    
+    <section class="ebook-categories">
+      <h2>Browse by Category</h2>
+      <ul>
+        <li><a href="ebooks.html">Featured Titles</a></li>
+        <li><a href="nf.html">Non-Fiction</a></li>
+        <li><a href="fs.html">Science Fiction</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Website: Awakenend Ebook Shop</p>
+    <p>Contact: azer.jerimark@gmail.com</p>
+  </footer>
+
+</body>
+</html>

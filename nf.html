@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebooks Shop</title>
+     <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <style>
+    body {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  background-color: #b8aeae;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+main {
+  padding: 50px;
+}
+
+.ebook-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.ebook-container h2{
+  margin: 20px;
+  padding: 8px;
+  space-between: 3px;
+}
+/* For screens smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+  .ebook-container {
+    flex-direction: column;  /* Stack ebooks vertically on small screens */
+    justify-content: center; /* Center ebooks horizontally */
+  }
+  
+  .ebook {
+    margin: 20px;
+    text-align: center;
+    
+    width: 300px;  /* Make ebooks full width on small screens */
+   
+  }
+}
+ .ebook:hover{
+   border-top: 2px solid white;
+   margin-top: 5px;
+ }
+
+
+.ebook img {
+  
+  max-width: 100px;
+  height: auto;
+}
+
+
+.ebook h3{
+  margin: 5px 0;
+  font-size: 8px;
+}
+.ebook p {
+  margin: 5px 0;
+  font-size: 10px;
+  
+}
+
+.ebook a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ebook a:hover{
+  background-color: grey;
+  color: white;
+}
+
+.ebook-categories {
+  text-align: center;
+}
+
+.ebook-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ebook-categories li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.ebook-categories a {
+  text-decoration: none;
+  color: white;
+}
+.ebook-categories a:hover {
+  border-bottom: 2px solid white;
+}
+  
+.star-rating {
+  font-size: 10px; /* Adjust star size */
+  display: inline-block;
+}
+
+.star {
+  
+  color: gold;
+}
+.star5{
+  color: grey;
+}
+
+.star.active {
+  color: gold;
+}
+
+.au{
+  color: grey;
+}
+.pr{
+  color:lightgreen;
+}
+  </style>
+</head>
+<body>
+        <nav>
+         <div class="logo">
+            Awakenend
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="ebooks.html">Shop</a></li>
+          
+            <li><a href="login.html">Login</a></li>
+         </ul>
+      </nav>
+  <header>
+    <h1>Awakenend Ebooks Shop</h1>
+  </header>
+  <main>
+    <section class="ebook-container">
+      <h2>Non-Fiction</h2>
+      <div class="ebook">
+        <img src="img/fn/1.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>A Comprehensive Training<br>
+        Guide To Facebook Ads</h3>
+        <p class="au">Nkosinathi Kinqa</p>
+        <p class="pr">US$2.99</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img src="img/fn/2.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Life And Works Of <br>
+        Edgar Allen Poe</h3>
+        <p class="au">Julian Symons</p>
+        <p class="pr">US$8.99</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/fn/3.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Death on Mount Washington</h3>
+        <p class="au">Randi Minetor</p>
+        <p class="pr">US$18.00</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/fn/4.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Buller's Campaign</h3>
+        <p class="au">Julian Symons</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img  src="img/fn/5.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>England's Pride</h3>    
+        <p class="au">Julian Symons</p>
+        <p class="pr">US$7.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fn/6.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The General Strike</h3>  
+        <p class="au">Julian Symons</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fn/7.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Harry Morgan's Way</h3>  
+        <p class="au">Dudley Pope</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+
+      
+      <div class="ebook">
+        <img src="img/fn/8.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Horatio Bottomley</h3>  
+        <p class="au">Julian Symons</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fn/9.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Thirties: A Dream<br>
+           Revolved</h3>  
+        <p class="au">Julian Symons</p>
+        <p class="pr">US$8.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+      <div class="ebook">
+        <img src="img/fn/10.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Thomas Carlyle</h3>  
+        <p class="au">Julian Symons</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+            <div class="ebook">
+        <img src="img/fn/11.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>73° North</h3>  
+        <p class="au">Dudley Pope</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fn/12.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Collected Nonfiction</h3>  
+        <p class="au">Jimmy Breslin</p>
+        <p class="pr">US$31.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+    </section>
+    
+
+
+    
+    
+    <section class="ebook-categories">
+      <h2>Browse by Category</h2>
+      <ul>
+        <li><a href="ebooks.html">Featured Titles</a></li>
+        <li><a href="f.html">Fiction</a></li>
+        <li><a href="fs.html">Science Fiction</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Website: Awakenend Ebook Shop</p>
+    <p>Contact: azer.jerimark@gmail.com</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebooks Shop</title>
+     <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <style>
+    body {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  background-color: #b8aeae;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+main {
+  padding: 50px;
+}
+
+.ebook-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ebook-container h2{
+  margin: 10px;
+  padding: 8px;
+}
+
+/* For screens smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+  .ebook-container {
+    flex-direction: column;  /* Stack ebooks vertically on small screens */
+    justify-content: center; /* Center ebooks horizontally */
+  }
+    .ebook {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 300px;  /* Make ebooks full width on small screens */
+    
+  }
+}
+
+ .ebook:hover{
+   border-top: 2px solid white;
+   margin-top: 5px;
+ }
+
+
+
+.ebook img {
+  
+  max-width: 100px;
+  height: auto;
+}
+
+
+.ebook h3{
+  margin: 5px 0;
+  font-size: 8px;
+}
+.ebook p {
+  margin: 5px 0;
+  font-size: 10px;
+  
+}
+
+.ebook a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+}
+.ebook a:hover{
+  background-color: grey;
+  color: white;
+}
+
+.ebook-categories {
+  text-align: center;
+}
+
+.ebook-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ebook-categories li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.ebook-categories a {
+  text-decoration: none;
+  color: white;
+}
+.ebook-categories a:hover {
+  border-bottom: 2px solid white;
+}
+  
+
+
+.star-rating {
+  font-size: 10px; /* Adjust star size */
+  display: inline-block;
+}
+
+.star {
+  cursor: pointer;
+  color: gold;
+}
+.star5{
+  color: grey;
+}
+
+.star.active {
+  color: gold;
+}
+
+.au{
+  color: grey;
+}
+.pr{
+  color:lightgreen;
+}
+  </style>
+</head>
+<body>
+        <nav>
+         <div class="logo">
+            Awakenend
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="ebooks.html">Shop</a></li>
+            <li><a href="login.html">Login</a></li>
+         </ul>
+      </nav>
+  <header>
+    <h1>Awakenend Ebooks Shop</h1>
+  </header>
+  <main>
+    <section class="ebook-container">
+      <h2>Featured Titles</h2>
+      <div class="ebook">
+        <img src="img/b/1.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Idea of You</h3>
+        <p class="au">Robinne Lee</p>
+        <p class="pr">US$12.59</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img src="img/b/2.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Boys in the Boat</h3>
+        <p class="au">Daniel James Brown</p>
+        <p class="pr">US$16.35</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/b/3.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Three-Body Problem</h3>
+        <p class="au">Cixin Liu</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/b/4.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Dune</h3>
+        <p class="au">Frank Herbert</p>
+        <p class="pr">US$10.99</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img  src="img/b/5.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Nightingale</h3>       
+        <p class="au">Kristin Hannah</p>
+        <p class="pr">US$10.19</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/b/6.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Killers of the Flower Moon</h3>  
+        <p class="au">David Grann</p>
+        <p class="pr">US$9.94</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/b/7.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Silent Patient</h3>  
+        <p class="au">Alex Michaelides</p>
+        <p class="pr">US$12.59</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+
+      
+      <div class="ebook">
+        <img src="img/b/8.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Poor Things</h3>  
+        <p class="au">Alasdair Gray</p>
+        <p class="pr">US$10.79</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/b/9.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Fool Me Once</h3>  
+        <p class="au">Harlan Coben</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+      <div class="ebook">
+        <img src="img/b/10.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Tattooist of Auschwitz</h3>  
+        <p class="au">Heather Morris</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+            <div class="ebook">
+        <img src="img/b/11.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Wrong Daughter</h3>  
+        <p class="au">Dandy Smith</p>
+        <p class="pr">US$6.87</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/b/12.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Murder on the Menu</h3>  
+        <p class="au">Alex Coombs</p>
+        <p class="pr">US$4.92</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+      <div class="ebook">
+        <img src="img/b/13.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Mistress</h3>  
+        <p class="au">Valerie Keogh</p>
+        <p class="pr">US$3.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+    
+      
+      
+    </section>
+    
+
+
+    
+    
+    <section class="ebook-categories">
+      <h2>Browse by Category</h2>
+      <ul>
+        <li><a href="f.html">Fiction</a></li>
+        <li><a href="nf.html">Non-Fiction</a></li>
+        <li><a href="fs.html">Science Fiction</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Website: Awakenend Ebook Shop</p>
+    <p>Contact: azer.jerimark@gmail.com</p>
+  </footer>
+
+</body>
+</html>

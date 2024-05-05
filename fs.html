@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebooks Shop</title>
+     <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <style>
+    body {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  background-color: #b8aeae;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+main {
+  padding: 50px;
+}
+
+.ebook-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.ebook-container h2{
+  margin: 20px;
+  padding: 8px;
+  space-between: 3px;
+}
+/* For screens smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+  .ebook-container {
+    flex-direction: column;  /* Stack ebooks vertically on small screens */
+    justify-content: center; /* Center ebooks horizontally */
+  }
+  
+  .ebook {
+    margin: 20px;
+    text-align: center;
+    
+    width: 300px;  /* Make ebooks full width on small screens */
+   
+  }
+}
+ .ebook:hover{
+   border-top: 2px solid white;
+   margin-top: 5px;
+ }
+
+
+.ebook img {
+  
+  max-width: 100px;
+  height: auto;
+}
+
+
+.ebook h3{
+  margin: 5px 0;
+  font-size: 8px;
+}
+.ebook p {
+  margin: 5px 0;
+  font-size: 10px;
+  
+}
+
+.ebook a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ebook a:hover{
+  background-color: grey;
+  color: white;
+}
+
+.ebook-categories {
+  text-align: center;
+}
+
+.ebook-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ebook-categories li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.ebook-categories a {
+  text-decoration: none;
+  color: white;
+}
+.ebook-categories a:hover {
+  border-bottom: 2px solid white;
+}
+  
+.star-rating {
+  font-size: 10px; /* Adjust star size */
+  display: inline-block;
+}
+
+.star {
+  
+  color: gold;
+}
+.star5{
+  color: grey;
+}
+
+.star.active {
+  color: gold;
+}
+
+.au{
+  color: grey;
+}
+.pr{
+  color:lightgreen;
+}
+  </style>
+</head>
+<body>
+        <nav>
+         <div class="logo">
+            Awakenend
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="ebooks.html">Shop</a></li>
+          
+            <li><a href="login.html">Login</a></li>
+         </ul>
+      </nav>
+  <header>
+    <h1>Awakenend Ebooks Shop</h1>
+  </header>
+  <main>
+    <section class="ebook-container">
+      <h2>Science Fiction</h2>
+      
+      
+      <div class="ebook">
+        <img src="img/fs/1.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Extinction</h3>
+        <p class="au">Douglas Preston</p>
+        <p class="pr">US$9.99</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img src="img/fs/2.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star5" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Dune</h3>
+        <p class="au">Frank Herbert</p>
+        <p class="pr">US$10.99</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/fs/3.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star5" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Three-Body Problem</h3>
+        <p class="au">Cixin Liu, <br>
+        Ken Liu (trans.)</p>
+        <p class="pr">US$13.29</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+      <div class="ebook">
+        <img src="img/fs/4.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>All Systems Red</h3>
+        <p class="au">Martha Wells</p>
+        <p class="pr">US$4.24</p>
+        <a href="login.html">Buy</a>
+      </div>
+      
+            <div class="ebook">
+        <img  src="img/fs/5.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Bezzle</h3>    
+        <p class="au">Cory Doctorow</p>
+        <p class="pr">US$19.59</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fs/6.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Dark Forest</h3>  
+        <p class="au">Cixin Liu, Joel<br> Martinsen (trans.)</p>
+        <p class="pr">US$13.29</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fs/7.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Death's End</h3>  
+        <p class="au">Cixin Liu, <br>
+        Ken Liu (trans.)</p>
+        <p class="pr">US$13.29</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+
+      
+      <div class="ebook">
+        <img src="img/fs/8.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Service Model</h3>  
+        <p class="au">Adrian Tchaikovsky</p>
+        <p class="pr">US$20.29</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fs/9.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Disturbing the Dead</h3>  
+        <p class="au">Kelley Armstrong</p>
+        <p class="pr">US$19.60</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+      <div class="ebook">
+        <img src="img/fs/10.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>The Caladan Trilogy</h3>  
+        <p class="au">Brian Herbert, <br>
+        Kevin J. Anderson</p>
+        <p class="pr">US$27.99</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+            <div class="ebook">
+        <img src="img/fs/11.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star5" data-rating="1">★</span>
+  <span class="star5" data-rating="2">★</span>
+  <span class="star5" data-rating="3">★</span>
+  <span class="star5" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>In Our Stars</h3>  
+        <p class="au">Jack Campbell</p>
+        <p class="pr">US$17.52</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      <div class="ebook">
+        <img src="img/fs/12.jpg" alt="Ebook cover">
+        <br>
+         <div class="star-rating">
+  <span class="star" data-rating="1">★</span>
+  <span class="star" data-rating="2">★</span>
+  <span class="star" data-rating="3">★</span>
+  <span class="star" data-rating="4">★</span>
+  <span class="star5" data-rating="5">★</span>
+    </div>
+    <br>
+        <h3>Echo of Worlds</h3>  
+        <p class="au">M. R. Carey</p>
+        <p class="pr">US$10.00</p>
+        <a href="login.html">Buy</a>
+
+      </div>
+      
+    </section>
+    
+
+
+    
+    
+    <section class="ebook-categories">
+      <h2>Browse by Category</h2>
+      <ul>
+        <li><a href="ebooks.html">Featured Titles</a></li>
+        <li><a href="nf.html">Non-Fiction</a></li>
+        <li><a href="f.html">Fiction</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Website: Awakenend Ebook Shop</p>
+    <p>Contact: azer.jerimark@gmail.com</p>
+  </footer>
+
+</body>
+</html>
